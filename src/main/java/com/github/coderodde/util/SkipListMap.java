@@ -83,7 +83,7 @@ public final class SkipListMap<K extends Comparable<? super K>, V>
      * Used in {@link #put(java.lang.Comparable, java.lang.Object)} and 
      * {@link #remove(java.lang.Object)}.
      */
-    private SkipListMapNode<K, V>[] update = 
+    private final SkipListMapNode<K, V>[] update = 
         new SkipListMapNode[MAXIMUM_NUMBER_OF_LEVELS];
     
     /**
